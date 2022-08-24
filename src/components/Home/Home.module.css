@@ -1,0 +1,119 @@
+@keyframes popInOut {
+  0%{opacity: 0}
+  40%{opacity: 1}
+  70%{opacity: 1}
+  0%{opacity: 0}
+}
+
+@keyframes popIn {
+  0%{opacity: 0}
+  40%{opacity: 1}
+  100%{opacity: 1}
+}
+
+@keyframes bounce {
+  0%{transform: translateY(-7px)}
+  50%{transform: translateY(0)}
+  100%{transform: translateY(-7px)}
+}
+
+.home{
+  position: absolute;
+  top: 0; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  /* padding-bottom: 12rem; */
+}
+
+.homeTopD, .homeTopM{
+  opacity: 0;
+  animation: popInOut ease-in-out 3s, bounce ease-in-out 2s;
+  animation-iteration-count: 2, infinite;
+}
+
+.homeTopDF, .homeTopMF{
+  animation: popIn ease-in-out 3s, bounce ease-in-out 2s;
+  animation-iteration-count: 1, infinite;
+}
+
+.homeTopD, .homeTopDF{
+  display: none;
+  height: 20vh;
+  align-items: flex-end;
+}
+
+.homeTopM, .homeTopMF{
+  height: 45vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+.homeBottom {
+  margin-top: 5vh;
+  height: 25vh;
+  display:flex;
+}
+
+.btnContainer {
+  margin: 16px 16px;
+  width: 30vw;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.no, .yes {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: solid black;
+  border-radius: 2px;
+  border-width: 1px;
+  width: 7.5rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  transition: box-shadow 0.1s ease-in;
+  /* opacity: 0; */
+  margin-top: 4px;
+  color: black;
+}
+
+.no:active, .yes:active {
+  background-color: #E5E7E2;
+  border-width: 2px;
+  border-radius: 3px;
+}
+
+@media (min-width: 720px){
+  .homeTopD, .homeTopDF{
+    display: flex;
+  }
+  .homeTopM, .homeTopMF{
+    display:none
+  }
+  .home{
+    padding-bottom: 0;
+    /* padding-top: 4rem; */
+  }
+  .btnContainer{
+    width: 10rem;
+  }
+  .no:hover, .yes:hover {
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.05s ease-out;
+  }
+  .no:active, .yes:active {
+    background-color: #E5E7E2;
+    margin-top: 6px;
+    margin-left: 4px;
+    box-shadow: none;
+  }
+
+}

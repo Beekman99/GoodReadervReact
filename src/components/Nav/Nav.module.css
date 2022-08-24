@@ -1,0 +1,174 @@
+.menuOverlayM{
+  position: absolute;
+  right: 0px;
+  background-color: rgb(255, 255, 255);
+  z-index: 4;
+  height: 100vh;
+  width: 100vw;
+  /* transition: width 0.35s; */
+}
+
+.burgermenu, .burgermenuX {
+  width: 11vw;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  z-index: 4;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+}
+
+.burgermenu:before,
+.burgermenu:after,
+.burgermenu div,
+.burgermenuX:before,
+.burgermenuX:after,
+.burgermenuX div{
+  background: rgb(0, 0, 0);
+  content: "";
+  display: block;
+  height: 4px;
+  border-radius: 5px;
+  margin: 2vw 0;
+  transition: 0.5s;
+}
+
+.burgermenu:before{
+  transform: translateY(3vw) translateX(0vw) rotate(135deg);
+}
+
+.burgermenu:after{
+  transform: translateY(-2.3vw) rotate(-135deg);
+}
+
+.burgermenu div{
+  transform: scale(0);
+}
+
+.navM, .navMX{
+  display: flex;
+}
+
+.navM{
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+}
+
+.navListMX{
+  display: none
+}
+
+.navListM {
+  list-style: none;
+  margin-top: 20vh;
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: inherit;
+}
+
+.navListM > li{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vw;
+}
+
+.navD{
+  display: none;
+  height: 100vh;
+  width: 15vw;
+  z-index: 3;
+  position: absolute;
+}
+
+.navListD{
+  list-style: none;
+  position: absolute;
+  top: 10vh;
+  z-index: 3;
+}
+.navListD > li{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.3rem;
+}
+
+.homeBtnM, .authorBtnM, .buyBtnM {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  color: black;
+  background-color: transparent;
+  border: solid 0.4rem;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  font-size: 7vw;
+  width: 30vw;
+}
+
+.homeBtnD, .authorBtnD, .buyBtnD {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  color: black;
+  background-color: transparent;
+  border: solid 0.2rem;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  font-size: 1.2rem;
+  padding-left: 0.8rem;
+}
+
+.homeBtnMS, .authorBtnMS, .buyBtnMS {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  color: black;
+  background-color: transparent;
+  border: solid 0.4rem;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-radius: 1px;
+  border-left-color: #9C0002;
+  font-size: 7vw;
+  width: 30vw;
+}
+
+.homeBtnDS, .authorBtnDS, .buyBtnDS {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  color: black;
+  background-color: transparent;
+  border: solid 0.2rem;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-radius: 1px;
+  border-left-color: #9C0002;
+  font-size: 1.2rem;
+  padding-left: 0.8rem;
+}
+
+@media (min-width: 720px){
+  .navM, .navMX{
+    display: none;
+  }
+  .navD{
+    display: flex;
+  }
+  .menuOverlayM{
+    display: none;
+  }
+
+}

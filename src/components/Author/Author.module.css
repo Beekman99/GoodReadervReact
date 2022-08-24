@@ -1,0 +1,43 @@
+.author {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: url(./imgs/authorBGM.jpg);
+  background-size: 100vw;  
+}
+
+.authorPic {
+  width: 90vw;
+  z-index: 3;
+}
+
+.overlay{
+  position:absolute;
+  width: 100vw;
+  height: 100%;
+  z-index: 2;
+  backdrop-filter: blur(4px);
+  background-color: rgba(145, 145, 145, 0.301);
+}
+
+@media (min-width: 720px){
+
+  .authorPic{
+    width: 60vw;
+  }
+  .author{
+    width: 85vw;
+    background: url(./imgs/authorBGD.jpg);
+    background-size: 85vw;  
+  }
+  .overlay{
+    width: 85vw;
+  }
+
+}
