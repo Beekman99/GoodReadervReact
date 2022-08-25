@@ -1,58 +1,61 @@
 import styles from './Buy.module.css'
+import cover from './imgs/cover.svg'
+import Nav from '../Nav/Nav';
 
 function Buy(){
   return(
-    <div>
+    <>
+    <Nav/>
     <div className={styles.purchasePageD}>
-      <div className="purchaseSectionD"> 
-        <div class="purchaseSDTop">
-          <div class="purchaseSDTopLeft">
-            <img src="/imgs/cover.svg" alt="bookcover" id="coverD"/>
+      <div className={styles.purchaseSectionD}> 
+        <div className={styles.purchaseSDTop}>
+          <div className={styles.purchaseSDTopLeft}>
+            <img src={cover} alt="bookcover" className={styles.coverD}/>
           </div>
-          <div class="purchaseSDTopRight">
-            <div class="authorDesc">
-              <p id="titleD">I am a good reader</p>
-              <p id="authorD">By M'Rone</p>
+          <div className={styles.purchaseSDTopRight}>
+            <div className={styles.authorDesc}>
+              <p className={styles.titleD}>I am a good reader</p>
+              <p className={styles.authorD}>By M'Rone</p>
             </div>
-            <div class="purchaseLinksD center">
-              <p id="purchaseOnD">Purchase on</p>
-              <a href="https://www.amazon.com/gp/product/B09ZD6VN4W/" target="_blank" class="purchaseLinkD">
+            <div className={styles.purchaseLinksD}>
+              <p className={styles.purchaseOnD}>Purchase on</p>
+              <a href="https://www.amazon.com/gp/product/B09ZD6VN4W/" target="_blank" className={styles.purchaseLinkD}>
                 Amazon
               </a>
-              <a href="https://www.barnesandnoble.com/w/i-am-a-good-reader-mrone/1141413149" target="_blank" class="purchaseLinkD">
+              <a href="https://www.barnesandnoble.com/w/i-am-a-good-reader-mrone/1141413149" target="_blank" className={styles.purchaseLinkD}>
                 Barnes & Noble
               </a>
             </div>
           </div>
   
         </div>
-        <div class="purchaseSDBottom">
-          <p id="synopsisD">Synopsis</p>
-          <p id="synopsisTextD">I Am A Good Reader is the story about fighting back against the unseen forces that manipulate, coerce, influence, divide and pick you off one-by-one with each and every word you see. This is your story; you are in the fight of your life against those hellbent to make you believe what you read. Are you a good reader? Resist.</p>
+        <div className={styles.purchaseSDBottom}>
+          <p className={styles.synopsisD}>Synopsis</p>
+          <p className={styles.synopsisTextD}>I Am A Good Reader is the story about fighting back against the unseen forces that manipulate, coerce, influence, divide and pick you off one-by-one with each and every word you see. This is your story; you are in the fight of your life against those hellbent to make you believe what you read. Are you a good reader? Resist.</p>
         </div>
       </div>
     </div>
     <div className={styles.purchasePageM}>
-      <div class="coverContainerM center" id="coverContainerM">
-        <img src="/imgs/cover.svg" alt="bookcover" id="coverM"/>
+      <div className={styles.coverContainerM}>
+        <img src={cover} alt="bookcover" className={styles.coverM}/>
       </div>
-      <div class="authorDesc">
-        <p id="titleM">I am a good reader</p>
-        <p id="authorM">By M'Rone</p>
+      <div className={styles.authorDesc}>
+        <p className={styles.titleM}>I am a good reader</p>
+        <p className={styles.authorM}>By M'Rone</p>
       </div>
-      <div class="purchaseLinksM center">
-        <p id="purchaseOnM">Purchase On</p>
-        <a href="https://www.amazon.com/gp/product/B09ZD6VN4W/" target="_blank" class="purchaseLinkM">
+      <div className={styles.purchaseLinksM}>
+        <p className={styles.purchaseOnM}>Purchase On</p>
+        <a href="https://www.amazon.com/gp/product/B09ZD6VN4W/" target="_blank" className={styles.purchaseLinkM}>
           Amazon
         </a>
-        <a href="https://www.barnesandnoble.com/w/i-am-a-good-reader-mrone/1141413149" target="_blank" class="purchaseLinkM">
+        <a href="https://www.barnesandnoble.com/w/i-am-a-good-reader-mrone/1141413149" target="_blank" className={styles.purchaseLinkM}>
           Barnes & Noble
         </a>
       </div>
-      <div class="synopsisM">
-        <div class="synopsisTitleM">
-          <p id="synopsisDescM">Synopsis</p>
-          <div class="chevronContainer">
+      <div className={styles.synopsisM}>
+        <div className={styles.synopsisTitleM}>
+          <p className={styles.synopsisDescM}>Synopsis</p>
+          {/* <div className={styles.chevronContainer}>
             <a href="#synopsisTextM">
               <img src="/imgs/chevrondown.svg" alt="expandsynopsis" id="chevrondown"/>
             </a>
@@ -60,14 +63,14 @@ function Buy(){
               <img src="/imgs/chevronup.svg" alt="expandsynopsis" id="chevronup" class="hidden"/>
             </a>
                  
-          </div>
+          </div> */}
         </div>
-        <p class="hidden" id="synopsisTextM">
+        <p  className={styles.synopsisTextM}>
           I Am A Good Reader is the story about fighting back against the unseen forces that manipulate, coerce, influence, divide and pick you off one-by-one with each and every word you see. This is your story; you are in the fight of your life against those hellbent to make you believe what you read. Are you a good reader? Resist.
         </p>
       </div>
     </div>
-  </div>
+  </>
   )
 }
 

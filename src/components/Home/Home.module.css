@@ -17,6 +17,13 @@
   100%{transform: translateY(-7px)}
 }
 
+@keyframes popInDelayed {
+  0%{opacity: 0}
+  30%{opacity: 0}
+  75%{opacity: 1}
+  100%{opacity: 1}
+}
+
 .home{
   position: absolute;
   top: 0; 
@@ -41,13 +48,20 @@
   animation-iteration-count: 1, infinite;
 }
 
-.homeTopD, .homeTopDF{
-  display: none;
-  height: 20vh;
-  align-items: flex-end;
+.homeTopDStable, .homeTopMStable{
+  animation: bounce ease-in-out 2s;
+  animation-iteration-count: infinite;
 }
 
-.homeTopM, .homeTopMF{
+
+.homeTopD, .homeTopDF, .homeTopDStable{
+  display: none;
+  height: 22vh;
+  align-items: flex-end;
+  /* justify-content: center; */
+}
+
+.homeTopM, .homeTopMF, .homeTopMStable{
   height: 45vh;
   display: flex;
   align-items: flex-end;
@@ -55,11 +69,11 @@
 
 .homeBottom {
   margin-top: 5vh;
-  height: 25vh;
+  height: 30vh;
   display:flex;
 }
 
-.btnContainer {
+.btnContainer, .btnContainerStable {
   margin: 16px 16px;
   width: 30vw;
   height: 4rem;
@@ -67,6 +81,11 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
+}
+
+.btnContainer{
+  animation: popInDelayed ease-in-out 4s;
+  animation-iteration-count: 1;
 }
 
 .no, .yes {
@@ -83,6 +102,9 @@
   /* opacity: 0; */
   margin-top: 4px;
   color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .no:active, .yes:active {
@@ -91,18 +113,50 @@
   border-radius: 3px;
 }
 
+.goodreading{
+  width: 75vw;
+}
+
+.smile{
+  width: 24vw;
+}
+
+.areyou{
+  width: 75vw;
+}
+
+.eyeContainer{
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 1;
+}
+
+.eyeM{
+  width: 100%;
+}
+
+.eyeD{
+  width: 75%;
+  display: none;
+}
+
 @media (min-width: 720px){
-  .homeTopD, .homeTopDF{
+  .homeTopD, .homeTopDF, .homeTopDStable{
     display: flex;
   }
-  .homeTopM, .homeTopMF{
+  .homeTopM, .homeTopMF, .homeTopMStable{
     display:none
   }
   .home{
     padding-bottom: 0;
     /* padding-top: 4rem; */
   }
-  .btnContainer{
+  .btnContainer, .btnContainerStable{
     width: 10rem;
   }
   .no:hover, .yes:hover {
@@ -114,6 +168,12 @@
     margin-top: 6px;
     margin-left: 4px;
     box-shadow: none;
+  }
+  .eyeM{
+    display: none;
+  }
+  .eyeD{
+    display: flex;
   }
 
 }

@@ -1,8 +1,8 @@
 import {useState} from 'react';
-import {NavLink,} from 'react-router-dom';
-import styles from './Nav.module.css';
+import {NavLink} from 'react-router-dom';
+import styles from './NavHome.module.css';
 
-function Nav(){
+function NavHome(){
 
   const [barState, setBarState] = useState(false)
 
@@ -113,4 +113,4 @@ function Nav(){
   
 };
 
-export default Nav;
+export default NavHome;

@@ -102,16 +102,17 @@
   margin-bottom: 0.3rem;
 }
 
-/* @keyframes popIn {
+@keyframes popInDelayed {
   0%{opacity: 0}
-  40%{opacity: 1}
+  60%{opacity: 0}
+  90%{opacity: 1}
   100%{opacity: 1}
 }
 
 .navD, .navMX{
-  animation: popIn ease-in-out 2s;
+  animation: popInDelayed ease-in-out 6s;
   animation-iteration-count: 1;
-} */
+}
 
 .homeBtnM, .authorBtnM, .buyBtnM {
   font-family: 'Barlow', sans-serif;
