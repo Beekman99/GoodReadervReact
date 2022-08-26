@@ -1,5 +1,6 @@
 .menuOverlayM{
   position: absolute;
+  top: 0;
   right: 0px;
   background-color: rgb(255, 255, 255);
   z-index: 4;
@@ -125,6 +126,8 @@
   border-left-color: transparent;
   font-size: 6vw;
   width: 25vw;
+  padding-left: 4vw;
+  text-align: left;
 }
 
 .homeBtnD, .authorBtnD, .buyBtnD {
@@ -159,6 +162,8 @@
   border-left-color: #9C0002;
   font-size: 6vw;
   width: 25vw;
+  padding-left: 4vw;
+  text-align: left;
 }
 
 .homeBtnDS, .authorBtnDS, .buyBtnDS {
