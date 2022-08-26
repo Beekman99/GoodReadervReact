@@ -4,13 +4,13 @@ import styles from './Nav.module.css';
 
 function Nav(){
 
-  const [barState, setBarState] = useState(false)
+  const [barState, setBarState] = useState(false);
 
   function toggleBar(){
     setBarState(function(prev){
-      return !prev
-    })
-  }
+      return !prev;
+    });
+  };
 
   if(!barState){
     return(
@@ -57,7 +57,7 @@ function Nav(){
         </ul>
       </nav>
       </>
-    )
+    );
   }else if(barState){
     return(
       <>
@@ -104,13 +104,12 @@ function Nav(){
         </ul>
       </nav>
       </>
-    )
+    );
   }else{
     return(
       <></>
-    )
-  }
-  
+    );
+  };
 };
 
 export default Nav;

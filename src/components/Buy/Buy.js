@@ -1,10 +1,46 @@
 import styles from './Buy.module.css'
 import cover from './imgs/cover.svg'
 import Nav from '../Nav/Nav';
+import {Helmet} from 'react-helmet'
 
 function Buy(){
+
+  const schemaMarkup = {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "reviewCount": "0"
+    },
+    "bookFormat": "EBook",
+    "copyrightHolder": {
+      "@type": "Organization",
+      "name": "BookBaby"
+    },
+    "copyrightYear": "2022",
+    "description": "Why do you believe everything you read? The subversive political fiction sci-fi book for dystopian lovers who know they already live in a dystopian nightmare, I Am A Good Reader is the rollercoaster fight-back against those who want one thing: for you to be a Good Reader.",
+    "genre": "Science Fiction",
+    "inLanguage": "en-US",
+    "isFamilyFriendly": "true",
+    "isbn": "9781667844619",
+    "name": "I am a good reader",
+    "numberOfPages": "366",
+    "publisher": {
+      "@type": "Organization",
+      "name": "BookBaby"
+    }
+  }
+  
+
   return(
     <>
+    <Helmet>
+      <title>Purchase "I AM A Good Reader" Sci-fi Novel on Amazon or Barnes & Noble</title>
+      <meta name="description" content="Buy the digital novel for your tablet or smart phone, on Amazon or Barnes & Noble."/>
+      <script type="application/ld+json">
+        {JSON.stringify(schemaMarkup)}
+      </script>
+    </Helmet>
     <Nav/>
     <div className={styles.purchasePageD}>
       <div className={styles.purchaseSectionD}> 

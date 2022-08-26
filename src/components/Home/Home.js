@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import {useEffect} from 'react';
 import {Link} from 'react-router-dom'
 import styles from './Home.module.css'
 import goodreadingm from './imgs/goodreadingm.svg';
@@ -10,7 +10,8 @@ import areyoud from './imgs/areyoud.svg';
 import eyem from './imgs/eyem.svg';
 import eyed from './imgs/eyed.svg';
 import NavHome from '../NavHome/NavHome';
-import Nav from '../Nav/Nav'
+import Nav from '../Nav/Nav';
+import {Helmet} from 'react-helmet';
 
 function Home(props){
 
@@ -117,12 +118,12 @@ function Home(props){
       "https://www.csmonitor.com/",
       "https://www.newsweek.com/",
       "https://time.com/"
-    ]
+    ];
 
-    const rand = Math.floor(Math.random()*yesList.length)
-    window.open(`${yesList[rand]}`,'_blank')
+    const rand = Math.floor(Math.random()*yesList.length);
+    window.open(`${yesList[rand]}`,'_blank');
 
-  }
+  };
 
   useEffect(function(){
 
@@ -132,18 +133,22 @@ function Home(props){
       time = setTimeout(function(){
         props.setQuestionState(function(prev){
           return prev+0.5;
-        })
-      }, 1500)
+        });
+      }, 1500);
 
     }else{
-      clearTimeout(time)
-    }
+      clearTimeout(time);
+    };
     return function(){clearTimeout(time);}; 
-  }, [props.questionState])
+  }, [props.questionState]);
 
   if(props.questionState >= 0 && props.questionState < 1){
     return(
       <>
+      <Helmet>
+        <title>"I Am A Good Reader" Explosive Political Sci-fi Novel by M'Rone</title>
+        <meta name="description" content="Why do you believe everything you read? The subversive political fiction sci-fi book for dystopian lovers who know they already live in a dystopian nightmare, I Am A Good Reader is the rollercoaster fight-back against those who want one thing: for you to be a Good Reader." />
+      </Helmet>
       <div className={styles.home}>
         <div className={styles.homeTopM}>
           <img src={goodreadingm} alt="greeting" className={styles.goodreading}/>
@@ -159,10 +164,14 @@ function Home(props){
             <img src={eyed} alt="backgroundobserver" className={styles.eyeD}/>
       </div>
       </>
-    )
+    );
   }else if(props.questionState >= 1 && props.questionState < 2){
     return(
       <>
+      <Helmet>
+        <title>"I Am A Good Reader" Explosive Political Sci-fi Novel by M'Rone</title>
+        <meta name="description" content="Why do you believe everything you read? The subversive political fiction sci-fi book for dystopian lovers who know they already live in a dystopian nightmare, I Am A Good Reader is the rollercoaster fight-back against those who want one thing: for you to be a Good Reader." />
+      </Helmet>
       <div className={styles.home}>
         <div className={styles.homeTopM}>
           <img src={smilem} alt="second-greeting" className={styles.smile}/>
@@ -178,11 +187,14 @@ function Home(props){
             <img src={eyed} alt="backgroundobserver" className={styles.eyeD}/>
       </div>
       </>
-    )
+    );
   }else if(props.questionState >= 2 && props.questionState < 3.5){
-  // }else{
     return(
       <>
+      <Helmet>
+        <title>"I Am A Good Reader" Explosive Political Sci-fi Novel by M'Rone</title>
+        <meta name="description" content="Why do you believe everything you read? The subversive political fiction sci-fi book for dystopian lovers who know they already live in a dystopian nightmare, I Am A Good Reader is the rollercoaster fight-back against those who want one thing: for you to be a Good Reader." />
+      </Helmet>
       <NavHome/>
       <div className={styles.home}>
         <div className={styles.homeTopMF}>
@@ -209,10 +221,14 @@ function Home(props){
             <img src={eyed} alt="backgroundobserver" className={styles.eyeD}/>
       </div>
       </>
-    )
+    );
   }else{
     return(
       <>
+      <Helmet>
+        <title>"I Am A Good Reader" Explosive Political Sci-fi Novel by M'Rone</title>
+        <meta name="description" content="Why do you believe everything you read? The subversive political fiction sci-fi book for dystopian lovers who know they already live in a dystopian nightmare, I Am A Good Reader is the rollercoaster fight-back against those who want one thing: for you to be a Good Reader." />
+      </Helmet>
       <Nav/>
       <div className={styles.home}>
         <div className={styles.homeTopMStable}>
@@ -239,9 +255,8 @@ function Home(props){
             <img src={eyed} alt="backgroundobserver" className={styles.eyeD}/>
       </div>
       </>
-    )
-  }
-
+    );
+  };
 };
 
 export default Home;
