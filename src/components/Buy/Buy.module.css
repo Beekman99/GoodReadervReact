@@ -64,7 +64,7 @@ a{
   justify-content: center;
   align-items: center;
   background-color: #71968A;
-  color: white;
+  /* color: white; */
   z-index: 3;
 }
 
@@ -107,10 +107,12 @@ a{
   font-weight: 800;
   font-size: 4vh;
   margin: 3vh 0 0 0;
+  color: #FFECEA;
 }
 
 .authorD{
   font-size: 2.5vh;
+  color: #E6D9D4;
 }
 
 .purchaseLinksD{
@@ -131,6 +133,7 @@ a{
   font-size: 3vh;
   font-weight: 600;
   text-align: center;
+  color: #FFECEA;
 }
 
 .purchaseLinkD{ 
@@ -167,10 +170,13 @@ a{
 .synopsisD{
   font-size: 3vh;
   font-weight: 600;
+  color: #FFECEA;
 }
 
 .synopsisTextD{
   font-size: 2.3vh;
+  color: #E6D9D4;
+  text-align: left;
 }
 
 .purchasePageM{
@@ -181,7 +187,7 @@ a{
   min-height: 100vh;
   background-color: #71968A;
   font-family: 'Space mono', 'monospace';
-  color: white;
+  /* color: white; */
   z-index: 3;
 }
 
@@ -202,11 +208,13 @@ a{
   font-size: 4vh;
   font-weight: 700;
   margin: 2vh 0 0 0;
+  color: #FFECEA;
 }
 
 .authorM{
   margin: 0.5vh 0 1.5vh 0;
   font-size: 2.5vh;
+  color: #E6D9D4;
 }
 
 .purchaseLinksM{
@@ -221,10 +229,11 @@ a{
   align-items: center;
 }
 
-#purchaseOnM{
+.purchaseOnM{
   font-weight: 600;
   font-size: 3vh;
   margin: 2vh 0 1vh 0;
+  color: #FFECEA;
 }
 
 .purchaseLinkM{ 
@@ -232,7 +241,7 @@ a{
   color: black;
   font-size: 3vh;
   font-weight: 600;
-  width: 32vh;
+  width: 35vh;
   height: 1.8rem;
   text-align: center;
   margin-top: 0.5vh;
@@ -266,6 +275,7 @@ a{
   font-size: 3vh;
   font-weight: 600;
   margin: 0;
+  color: #FFECEA;
 }
 
 /* .chevronContainer{
@@ -278,12 +288,8 @@ a{
 
 .synopsisTextM{
   font-size: 2.5vh;
-}
-
-.center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #E6D9D4;
+  text-align: justify;
 }
 
 .hidden {

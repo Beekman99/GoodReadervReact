@@ -141,6 +141,9 @@
   width: 5vw;
   padding-left: 0.8rem;
   margin-bottom: 3vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .homeBtnMS, .authorBtnMS, .buyBtnMS {
@@ -173,6 +176,9 @@
   width: 5vw;
   padding-left: 0.8rem;
   margin-bottom: 3vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 @media (min-width: 720px){

@@ -56,8 +56,9 @@
 
 .homeTopD, .homeTopDF, .homeTopDStable{
   display: none;
-  height: 22vh;
+  height: 30vh;
   align-items: flex-end;
+
   /* justify-content: center; */
 }
 
@@ -67,10 +68,14 @@
   align-items: flex-end;
 }
 
-.homeBottom {
+.homeBottom, .homeBottomM {
   margin-top: 5vh;
   height: 30vh;
   display:flex;
+}
+
+.homeBottomM{
+  margin-bottom: 10vh;
 }
 
 .btnContainer, .btnContainerStable {

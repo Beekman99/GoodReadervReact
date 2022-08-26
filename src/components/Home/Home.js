@@ -191,7 +191,7 @@ function Home(props){
         <div className={styles.homeTopDF}>
           <img src={areyoud} alt="third-greeting" className={styles.areyou}/>
         </div>
-        <div className={styles.homeBottom}>
+        <div className={styles.homeBottomM}>
           <div className={styles.btnContainer}>
             <button className={styles.yes} onClick={yesUrl}>
               Yes
@@ -221,7 +221,7 @@ function Home(props){
         <div className={styles.homeTopDStable}>
           <img src={areyoud} alt="third-greeting" className={styles.areyou}/>
         </div>
-        <div className={styles.homeBottom}>
+        <div className={styles.homeBottomM}>
           <div className={styles.btnContainerStable}>
             <button className={styles.yes} onClick={yesUrl}>
               Yes
