@@ -1,6 +1,6 @@
 import styles from './Buy.module.css'
 import cover from './imgs/cover.svg'
-import Nav from '../Nav/Nav';
+import NavBuy from '../NavBuy/NavBuy';
 import {Helmet} from 'react-helmet'
 
 function Buy(){
@@ -41,7 +41,7 @@ function Buy(){
         {JSON.stringify(schemaMarkup)}
       </script>
     </Helmet>
-    <Nav/>
+    <NavBuy/>
     <div className={styles.purchasePageD}>
       <div className={styles.purchaseSectionD}> 
         <div className={styles.purchaseSDTop}>
