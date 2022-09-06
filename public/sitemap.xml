@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+      <loc>http://areyouagoodreader.com</loc>
+      <lastmod>2022-07-28</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>http://areyouagoodreader.com/buy</loc>
+      <lastmod>2022-07-28</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>http://areyouagoodreader.com/author</loc>
+      <lastmod>2022-07-28</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1</priority>
+</url>
+</urlset>

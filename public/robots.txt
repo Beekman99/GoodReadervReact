@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
+Please upload this under http://areyouagoodreader.com/robots.txt
 User-agent: *
-Disallow:
+Disallow
+Sitemap: http://areyouagoodreader.com/sitemap.xml
