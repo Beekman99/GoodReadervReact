@@ -1,4 +1,3 @@
-Please upload this under http://areyouagoodreader.com/robots.txt
 User-agent: *
 Disallow
 Sitemap: http://areyouagoodreader.com/sitemap.xml
