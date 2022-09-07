@@ -9,7 +9,7 @@
 }
 
 .burgermenu, .burgermenuX {
-  width: 11vw;
+  width: 4em;
   margin-bottom: 2rem;
   margin-right: 1rem;
   margin-top: 1rem;
@@ -32,16 +32,16 @@
   display: block;
   height: 4px;
   border-radius: 5px;
-  margin: 2vw 0;
+  margin: 0.7em 0;
   transition: 0.5s;
 }
 
 .burgermenu:before{
-  transform: translateY(3vw) translateX(0vw) rotate(135deg);
+  transform: translateY(1em) translateX(0vw) rotate(135deg);
 }
 
 .burgermenu:after{
-  transform: translateY(-2.3vw) rotate(-135deg);
+  transform: translateY(-1em) rotate(-135deg);
 }
 
 .burgermenu div{
