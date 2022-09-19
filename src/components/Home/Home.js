@@ -151,7 +151,7 @@ function Home(props){
       </Helmet>
       <div className={styles.home}>
         <div className={styles.homeTopM}>
-          <img src={goodreadingm} alt="greeting" className={styles.goodreading}/>
+          <img src={goodreadingm} alt="greeting" className={styles.goodreadingM}/>
         </div>
         <div className={styles.homeTopD}>
           <img src={goodreadingd} alt="greeting" className={styles.goodreading}/>
@@ -174,7 +174,7 @@ function Home(props){
       </Helmet>
       <div className={styles.home}>
         <div className={styles.homeTopM}>
-          <img src={smilem} alt="second-greeting" className={styles.smile}/>
+          <img src={smilem} alt="second-greeting" className={styles.smileM}/>
         </div>
         <div className={styles.homeTopD}>
           <img src={smiled} alt="second-greeting" className={styles.smile}/>

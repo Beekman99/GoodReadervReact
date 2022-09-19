@@ -122,8 +122,18 @@
   width: 75vw;
 }
 
+.goodreadingM{
+  width: 75vw;
+  margin-bottom: 10vw;
+}
+
 .smile{
   width: 24vw;
+}
+
+.smileM{
+  width: 24vw;
+  margin-bottom: 10vw;
 }
 
 .areyou{
