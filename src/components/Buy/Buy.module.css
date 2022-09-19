@@ -204,11 +204,11 @@ a{
 }
 
 .coverM{
-  width: 32vh;
+  width: 40vw;
 }
 
 .titleM{
-  font-size: 4vh;
+  font-size: 5vw;
   font-weight: 700;
   margin: 2vh 0 0 0;
   color: #FFECEA;
@@ -216,7 +216,7 @@ a{
 
 .authorM{
   margin: 0.5vh 0 1.5vh 0;
-  font-size: 2.5vh;
+  font-size: 3vw;
   color: #E6D9D4;
 }
 
@@ -234,7 +234,7 @@ a{
 
 .purchaseOnM{
   font-weight: 600;
-  font-size: 3vh;
+  font-size: 3.4vw;
   margin: 2vh 0 1vh 0;
   color: #FFECEA;
 }
@@ -242,9 +242,9 @@ a{
 .purchaseLinkM{ 
   text-align: center;
   color: black;
-  font-size: 3vh;
+  font-size: 3.2vw;
   font-weight: 600;
-  width: 35vh;
+  width: 40vw;
   height: 1.8rem;
   text-align: center;
   margin-top: 0.5vh;
